@@ -6,3 +6,4 @@ __pycache__/
 *.pyd
 logs/
 logs/django_debug.json
+.env
