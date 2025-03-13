@@ -1,0 +1,7 @@
+logs/django_debug.json
+*.pdf
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+logs/
