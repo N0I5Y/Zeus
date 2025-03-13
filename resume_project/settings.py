@@ -45,12 +45,17 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",  # ✅ Allows any Vercel frontend
+]
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://y6n64epqpa.loclx.io",
     "https://ur0x1dpa4h.loclx.io",
     "https://etzcpys9nz.ap.loclx.io",
     "https://eqx78zfdeo.ap.loclx.io",
+    ""
 ]
 
 CORS_ALLOW_CREDENTIALS = True
