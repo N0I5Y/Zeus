@@ -1,3 +1,13 @@
+name: Test Cron Workflow
+
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print start message
+        run: echo "Workflow started at $(date)"
